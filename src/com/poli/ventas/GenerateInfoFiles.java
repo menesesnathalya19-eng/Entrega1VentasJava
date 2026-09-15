@@ -23,7 +23,11 @@ import java.util.Random;
  * Todos los archivos se generan en la carpeta raíz del proyecto y el
  * programa no solicita ningún dato por teclado al usuario.
  *
- * @author Nathalya Meneses
+ * @author INGRID VIVIANA ARENAS MALDONADO
+ * @author JOHAN PATAQUIVA VARGAS
+ * @author NATHALYA BRIGITTE MENESES RAMIREZ
+ * @author CRISTHIAN FERNANDO MELO MONTILLA
+ * @author ORTIZ BERNAL DAYAN ANGELICA
  */
 public class GenerateInfoFiles {
 
