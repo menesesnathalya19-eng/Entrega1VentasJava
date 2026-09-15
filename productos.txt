@@ -1,0 +1,15 @@
+1;Mochila tipo 1;22737.0
+2;Mochila tipo 2;23151.0
+3;Tajalapiz tipo 3;29283.0
+4;Tijeras tipo 4;25192.0
+5;Tijeras tipo 5;35466.0
+6;Borrador tipo 6;33423.0
+7;Mochila tipo 7;9670.0
+8;Tajalapiz tipo 8;15811.0
+9;Mochila tipo 9;15139.0
+10;Carpeta tipo 10;16982.0
+11;Carpeta tipo 11;48072.0
+12;Mochila tipo 12;5388.0
+13;Resaltador tipo 13;40457.0
+14;Tajalapiz tipo 14;10406.0
+15;Resaltador tipo 15;27929.0

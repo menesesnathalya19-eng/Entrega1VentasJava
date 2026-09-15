@@ -1,0 +1,8 @@
+CC;1144296365;Isabella;Ramirez
+TI;1196840325;Laura;Hernandez
+TI;1056745248;Isabella;Ruiz
+CE;1276190443;Isabella;Rodriguez
+CC;1129352951;Julian;Garcia
+TI;1621490281;Sebastian;Vargas
+TI;1026160130;Alejandro;Gomez
+CE;1460287495;Maria;Torres
