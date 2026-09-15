@@ -1,4 +1,4 @@
-# Sales File Generator — First Deliverable
+# Sales File Generator - First Deliverable
 
 A Java project that generates sample text files containing products, salespeople, and sales records. These files will serve as input for the main sales-processing application, which is planned for a later deliverable.
 
