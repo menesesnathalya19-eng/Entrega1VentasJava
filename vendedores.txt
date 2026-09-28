@@ -1,8 +1,0 @@
-TI;1238933614;Paula;Perez
-TI;1881802533;Daniela;Sanchez
-CE;1566697480;Daniela;Sanchez
-CC;1507644945;Juan;Ortiz
-TI;1283268571;Sofia;Torres
-CC;1150873224;Julian;Flores
-TI;1060102232;Laura;Vargas
-CE;1485993176;Natalia;Perez
