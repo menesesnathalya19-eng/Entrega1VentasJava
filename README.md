@@ -5,16 +5,16 @@ Proyecto en TypeScript con Node.js que genera archivos de texto de prueba para u
 ## Requisitos
 
 - Node.js 18 o posterior
-- npm
+- pnpm
 
 ## Instalar y ejecutar
 
 ```sh
-npm install
-npm run generate
+pnpm install
+pnpm run generate
 ```
 
-`npm run build` compila TypeScript a `dist/`; `npm start` ejecuta el JavaScript compilado. La generación escribe los archivos en el directorio de trabajo actual.
+`pnpm run build` compila TypeScript a `dist/`; `pnpm start` ejecuta el JavaScript compilado. La generación escribe los archivos en el directorio de trabajo actual.
 
 ## Archivos generados
 
