@@ -1,79 +1,34 @@
-# Sales File Generator - First Deliverable
+# Generador de archivos de ventas
 
-A Java project that generates sample text files containing products, salespeople, and sales records. These files will serve as input for the main sales-processing application, which is planned for a later deliverable.
+Proyecto en TypeScript con Node.js que genera archivos de texto de prueba para una futura aplicación de procesamiento de ventas. No procesa ventas ni solicita datos por teclado.
 
-## Team Members
+## Requisitos
 
-- INGRID VIVIANA ARENAS MALDONADO
-- JOHAN PATAQUIVA VARGAS
-- NATHALYA BRIGITTE MENESES RAMIREZ
-- CRISTHIAN FERNANDO MELO MONTILLA
-- ORTIZ BERNAL DAYAN ANGELICA
+- Node.js 18 o posterior
+- npm
 
-## Features
-
-- Generates 15 products with IDs, names, and unit prices.
-- Generates 8 salespeople with document types, document numbers, first names, and last names.
-- Generates one sales file per salesperson, with 3–8 sales records and 1–20 units per record.
-- References generated product IDs in sales records.
-- Runs without interactive input or external dependencies.
-
-Data is randomly generated, so results vary between runs. Generation quantities can be adjusted in the `main` method of `GenerateInfoFiles.java`.
-
-## Requirements
-
-- JDK 8 or later, with `java` and `javac` available on your PATH.
-- Optional: Eclipse IDE. Eclipse project configuration files are included.
-
-## Compile and Run
-
-Run these commands from the project root:
+## Instalar y ejecutar
 
 ```sh
-javac -encoding UTF-8 -d bin src/com/poli/ventas/GenerateInfoFiles.java
-java -cp bin com.poli.ventas.GenerateInfoFiles
+npm install
+npm run generate
 ```
 
-In Eclipse, import the repository as an existing project and run `GenerateInfoFiles` as a Java application, using the project root as the working directory.
+`npm run build` compila TypeScript a `dist/`; `npm start` ejecuta el JavaScript compilado. La generación escribe los archivos en el directorio de trabajo actual.
 
-## Generated Files
+## Archivos generados
 
-Files are written to the current working directory (the project root when following the instructions above). Fields are separated by semicolons.
+- `productos.txt`: 15 productos, con formato `ID;Nombre;Precio`.
+- `vendedores.txt`: 8 vendedores, con formato `TipoDocumento;NumeroDocumento;Nombres;Apellidos`.
+- `ventas_<documento>_<nombre>.txt`: un archivo por vendedor. La primera línea identifica al vendedor (`TipoDocumento;NumeroDocumento`); las siguientes contienen producto y cantidad (`IDProducto;Cantidad;`). Cada archivo tiene de 3 a 8 ventas, y cada cantidad es de 1 a 20.
 
-### `productos.txt`
+Los datos son pseudoaleatorios y los campos están separados por punto y coma; no se incluyen encabezados. Al ejecutar el generador se sobrescriben `productos.txt`, `vendedores.txt` y los archivos de ventas cuyo nombre coincida. Los archivos de ventas antiguos con nombres diferentes no se borran automáticamente.
 
-One product per line:
-
-```text
-ProductID;ProductName;UnitPrice
-```
-
-### `vendedores.txt`
-
-One salesperson per line:
+## Estructura
 
 ```text
-DocumentType;DocumentNumber;FirstNames;LastNames
-```
-
-### `ventas_<id>_<name>.txt`
-
-The filename includes the salesperson's document number and name without spaces. The first line identifies the salesperson; subsequent lines contain a product ID and quantity sold:
-
-```text
-DocumentType;DocumentNumber
-ProductID;Quantity;
-```
-
-The formats above describe the fields; the generated files do not include column headers.
-
-**Note:** Running the generator overwrites `productos.txt`, `vendedores.txt`, and any sales files with matching filenames. Sales files from previous runs with different filenames remain in the directory and may no longer match the current product or salesperson data.
-
-## Project Structure
-
-```text
-src/com/poli/ventas/GenerateInfoFiles.java  # Entry point and file-generation logic
-productos.txt                             # Generated products
-vendedores.txt                            # Generated salespeople
-ventas_*.txt                              # Generated sales records
+src/GenerateInfoFiles.ts  # Generador y punto de entrada
+productos.txt             # Datos generados de productos
+vendedores.txt            # Datos generados de vendedores
+ventas_*.txt              # Datos generados de ventas
 ```
