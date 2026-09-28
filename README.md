@@ -2,6 +2,12 @@
 
 Proyecto en TypeScript con Node.js que genera archivos de texto de prueba para una futura aplicación de procesamiento de ventas. No procesa ventas ni solicita datos por teclado.
 
+## Integrantes
+- INGRID VIVIANA ARENAS MALDONADO
+- JOHAN PATAQUIVA VARGAS
+- NATHALYA BRIGITTE MENESES RAMIREZ
+- CRISTHIAN FERNANDO MELO MONTILLA
+
 ## Requisitos
 
 - Node.js 18 o posterior
